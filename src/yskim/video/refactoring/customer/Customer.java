@@ -13,7 +13,7 @@ public class Customer {
     
     public Customer(String name) {
         this.name = name;
-    };
+    }
     
     public void addRental(Rental rental) {
         rentals.add(rental);
@@ -21,11 +21,14 @@ public class Customer {
     
     public String getName() {
         return name;
-    };
+    }
     
-    public String statement() {
-        StringBuilder result = new StringBuilder("Rental Record for " + getName() + "\n");
-        return result.append(new Calculator().getStatement(rentals)).toString();
+    public String getStatement() {
+        return new StringBuilder().append("Rental Record for ")
+                                  .append(getName())
+                                  .append("\n")
+                                  .append(new Calculator().getStatement(rentals))
+                                  .toString();
     }
     
 }

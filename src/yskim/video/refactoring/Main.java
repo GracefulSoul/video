@@ -20,11 +20,11 @@ public class Main {
         
         Customer customer = new Customer("Boy");
         customer.addRental(rental1);
-        System.out.println(customer.statement());
+        System.out.println(customer.getStatement());
         
         customer.addRental(rental2);
         customer.addRental(rental3);
-        System.out.println(customer.statement());
+        System.out.println(customer.getStatement());
     }
     
 }

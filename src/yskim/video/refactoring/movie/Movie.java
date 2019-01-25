@@ -24,7 +24,7 @@ public abstract class Movie {
     
     public String getTitle() {
         return this.title;
-    };
+    }
     
     public abstract double calculateAmount(int daysRented);
     
